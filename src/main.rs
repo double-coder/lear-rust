@@ -10,7 +10,7 @@ fn main() {
     
     loop {
         println!("Please input your guess.");
-        
+
         let mut guess = String::new();
 
         io::stdin()
@@ -32,5 +32,14 @@ fn main() {
             }
         }
     }
-    
+    let x1 = konichiwa(2);
+    println!("{x1}");
+}
+
+
+fn konichiwa(x: u32) -> u32 {
+    let y = {
+        x + 2
+    };
+    y
 }
