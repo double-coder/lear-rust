@@ -36,6 +36,7 @@ fn main() {
     }
     let x1 = konichiwa(2);
     println!("{x1}");
+    println!("{}", borrowing())
     // loop_chan()
 }
 
@@ -45,4 +46,10 @@ fn konichiwa(x: u32) -> u32 {
         x + 2
     };
     y
+}
+
+fn borrowing() -> String{
+    let s = String::from("hello");
+    let s1 = s;
+    s1 // here returning s will not work (buy rust borrowing rule)
 }
