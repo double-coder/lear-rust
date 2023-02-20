@@ -1,3 +1,5 @@
+// mod loop_chan;
+
 use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
@@ -34,6 +36,7 @@ fn main() {
     }
     let x1 = konichiwa(2);
     println!("{x1}");
+    // loop_chan()
 }
 
 
